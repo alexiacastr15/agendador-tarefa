@@ -2,13 +2,9 @@ package com.alexiadev.agendador_tafera.infrastructure.security;
 
 import com.alexiadev.agendador_tafera.business.dto.UsuarioDTO;
 import com.alexiadev.agendador_tafera.infrastructure.client.UsuarioClient;
-import com.alexiadev.usuario.infrastructure.entity.Usuario;
-import com.alexiadev.usuario.infrastructure.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 @Service
