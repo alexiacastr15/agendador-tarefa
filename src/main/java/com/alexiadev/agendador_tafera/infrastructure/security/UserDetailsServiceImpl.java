@@ -1,7 +1,7 @@
 package com.alexiadev.agendador_tafera.infrastructure.security;
 
 import com.alexiadev.agendador_tafera.business.dto.UsuarioDTO;
-import com.alexiadev.agendador_tafera.infrastructure.client.UsuarioClient;
+import com.alexiadev.agendador_tafera.infrastructure.security.client.UsuarioClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserDetailsServiceImpl {
 
-    @Autowired
+    @Autowired //serve para injetar dependências automaticamente em uma classe gerenciada
     private UsuarioClient client;
 
     public UserDetails carregaDadosUsuario(String email, String token){
